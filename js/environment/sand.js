@@ -3,7 +3,7 @@ function createSandTexture() {
     const textureLoader = new THREE.TextureLoader();
     
     // Load the textures - use fallback to generated textures if file doesn't load
-    const sandTexture = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_Color.png', 
+    const sandTexture = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_Color.png', 
         // Success callback
         function(texture) {
             console.log('Sand texture loaded successfully');
@@ -127,12 +127,11 @@ function createAdvancedSandMaterial() {
     const textureLoader = new THREE.TextureLoader();
     
     // Load all textures with the specific filenames you have
-    // Note the "../../textures/" path to go up two levels
-    const sandBaseTexture = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_Color.png');
-    const normalMap = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_NormalGL.png');
-    const roughnessMap = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_Roughness.png');
-    const displacementMap = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_Displacement.png');
-    const aoMap = textureLoader.load('../../textures/Ground079L_1K-PNG/Ground079L_1K-PNG_AmbientOcclusion.png');
+    const sandBaseTexture = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_Color.png');
+    const normalMap = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_NormalGL.png');
+    const roughnessMap = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_Roughness.png');
+    const displacementMap = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_Displacement.png');
+    const aoMap = textureLoader.load('textures/sand/ground/Ground079L_1K-PNG_AmbientOcclusion.png');
     
     // Set texture properties for tiling
     sandBaseTexture.wrapS = THREE.RepeatWrapping;

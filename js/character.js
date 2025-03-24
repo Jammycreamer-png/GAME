@@ -4,7 +4,7 @@ function loadCharacter(scene, callback) {
     
     // First load the idle animation (which will be our base model)
     loader.load(
-        '../models/Animation_Idle_02_withSkin.glb',
+        'models/characters/Animation_Idle_02_withSkin.glb',
         function(gltf) {
             console.log('Idle animation loaded');
             
@@ -34,7 +34,7 @@ function loadCharacter(scene, callback) {
             // Now load the walking animation
             document.getElementById('info').textContent = 'Loading walk animation...';
             loader.load(
-                '../models/Animation_Walking_withSkin.glb',
+                'models/characters/Animation_Walking_withSkin.glb',
                 function(gltf) {
                     console.log('Walk animation loaded');
                     
@@ -46,7 +46,7 @@ function loadCharacter(scene, callback) {
                     // Finally load the running animation
                     document.getElementById('info').textContent = 'Loading run animation...';
                     loader.load(
-                        '../models/Animation_Running_withSkin.glb',
+                        'models/characters/Animation_Running_withSkin.glb',
                         function(gltf) {
                             console.log('Run animation loaded');
                             

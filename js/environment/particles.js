@@ -6,7 +6,7 @@ function setupEnvironmentalEffects(scene) {
     const textureLoader = new THREE.TextureLoader();
     
     // Try to load dust texture, fall back to procedural if needed
-    const particleTexture = textureLoader.load('textures/dust1.png', 
+    const particleTexture = textureLoader.load('textures/sand/dust1.png', 
         function(texture) {
             console.log('Dust particle texture loaded successfully');
             createParticleSystems(texture);
